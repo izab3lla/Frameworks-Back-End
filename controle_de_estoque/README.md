@@ -29,4 +29,4 @@ http://127.0.0.1:8000/docs
 
 ## Armazenamento
 
-Os produtos são guardados em uma lista em memória e são perdidos quando a aplicação é reiniciada.
+Os produtos são guardados em uma lista em memória.
