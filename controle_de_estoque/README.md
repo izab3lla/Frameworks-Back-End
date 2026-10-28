@@ -11,13 +11,13 @@ Ter o Python instalado no computador.
 **1. Clonar o repositório**
 
 ```bash
-git clone https://github.com/izab3lla/Frameworks-Back-End/tree/main/controle_de_estoque
+git clone https://github.com/izab3lla/Frameworks-Back-End.git
 ```
 
 Entre na pasta do projeto:
 
 ```bash
-cd controle_de_estoque
+cd Frameworks-Back-End/controle_de_estoque
 ```
 
 **2. Instalar as dependências**
@@ -38,7 +38,6 @@ Com a aplicação em execução, acesse:
 
 http://127.0.0.1:8000/docs
 
-
 ## Rotas disponíveis
 
 | Método | Rota | Descrição |
@@ -49,8 +48,6 @@ http://127.0.0.1:8000/docs
 | PUT | `/produtos/{nome}` | Atualiza a quantidade e o preço de um produto |
 | DELETE | `/produtos/{nome}` | Remove um produto pelo nome |
 
-
 ## Armazenamento dos dados
 
 Os produtos são armazenados em uma lista em memória, sem utilização de banco de dados. Por isso, os dados cadastrados são perdidos quando a aplicação é reiniciada.
-
