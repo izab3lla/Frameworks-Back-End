@@ -15,7 +15,7 @@ async def root():
    return {"message": "Controle de Estoque"}
 
 #listando os produtos
-@app.get("/produtos")
+@app.get("/produtos", response_model=list[Produto])
 async def listar_produtos():
    return estoque
 
@@ -24,7 +24,7 @@ async def adicionar_produto(produto: Produto):
    estoque.append(produto.model_dump())
    return produto
 
-@app.put("/produtos/{nome}")
+@app.put("/produtos/{nome}", response_model=Produto)
 async def atualizar_produto(nome: str, quant: int, preco: float):
     for produto in estoque:
         if produto["nome"] == nome:
