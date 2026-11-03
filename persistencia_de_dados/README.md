@@ -46,16 +46,6 @@ Com a aplicação em execução, acesse:
 
 http://127.0.0.1:8000/docs
 
-## Rotas disponíveis
-
-| Método | Rota | Descrição |
-|---|---|---|
-| GET | `/` | Exibe uma mensagem inicial |
-| GET | `/teste-conexao` | Verifica a conexão com o banco |
-| GET | `/produtos` | Lista os produtos cadastrados |
-| POST | `/produtos` | Cadastra um produto |
-| PUT | `/produtos/{nome}` | Atualiza a quantidade e o preço de um produto |
-| DELETE | `/produtos/{nome}` | Remove um produto pelo nome |
 
 ## Armazenamento dos dados
 
