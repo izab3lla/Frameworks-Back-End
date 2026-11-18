@@ -56,7 +56,15 @@ Ainda dentro da pasta `documentacao_e_testes`:
 pytest
 ```
 
+Se quiser ver o nome de cada teste:
+
+```bash
+pytest -v
+```
+
 Os testes usam o `TestClient` do FastAPI junto com o Pytest. Eles rodam em um banco separado (`teste.db`), então o `estoque.db` não é alterado.
+
+Tem testes de status 200, cadastro de produto, erro 404 na atualização e na remoção, e também um teste do fluxo completo.
 
 ## Armazenamento dos dados
 
