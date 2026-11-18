@@ -6,6 +6,7 @@ from database import get_db
 from schemas import ProdutoCreate, ProdutoResponse
 
 #tags usadas no swagger pra organizar as rotas
+#summary, description e responses deixam o /docs mais claro
 tags_metadata = [
     {
         "name": "Geral",
